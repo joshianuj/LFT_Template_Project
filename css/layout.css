@@ -4,51 +4,53 @@
 .container {
 	width:1069px;
 }
+/*-----------------------------------header starts-------------------------------*/
 .header {
-	background-color:#594e4e;
-	padding:31px 30px 10px 30px;
+	background-color: #594e4e;
+	padding: 31px 30px 10px 30px;
 }
 .logo {
-	margin-bottom:51px;
+	margin-bottom: 51px;
 }
 .navigation {
-	background-color:#a49191;
-	float:left;
+	background-color: #a49191;
+	float: left;
 }
 .slider {
-	margin-top:-1px;
-	background-color:red;
-	padding:17px 30px 13px 30px;
+	margin-top: -1px;
+	background-color: red;
+	padding: 17px 30px 13px 30px;
 }
+/*------------------------------------main part---------------------------------*/
 .main {
-	min-height:634px;
-	
-	background-color:white;
-	border-bottom:1px solid b2b2b2;
-	padding-top:24px;
-	padding-left:30px;
-	padding-right:30px;
+	min-height: 634px;
+	background-color: white;
+	border-bottom: 1px solid b2b2b2;
+	padding: 24px 30px 0px 30px;
 }
+.contains-leftright{
+	padding: 0px 6px 0px 22px;}
 .left-content {
-	padding-left:22px;
-	width:542px;
-	float:left;
+	width: 540px;
+	float: left;
 }
 .right-content {
 	float:right;
-	padding-right:6px;
+	width:280px;
 }
+
+/*----------------------------------------------footer------------------------------*/
 .footer{
 	border-top:1px solid #b2b2b2;
 
 }
 .footer-glasstype {
-	color:black;
-	background:url(../images/background-slice.png);
-	min-height:242px;
+	color: black;
+	background: url(../images/background-slice.png);
+	min-height: 242px;
 	padding: 38px 30px 40px 58px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
 }
 .footer-nav {
 	padding: 4px 30px 6px 58px;
@@ -56,15 +58,15 @@
 }
 .footer-main {
 	padding: 17px 20px 0px 69px;
-	background:url(../images/footer-bg.png) repeat-x 0px 0px;
-	min-height:369px;
-	font-family:Arial, Helvetica, sans-serif;
+	background: url(../images/footer-bg.png) repeat-x 0px 0px;
+	min-height: 369px;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 }
 .footer-main-nav {
-	float:right;
-	width:810px;
+	float: right;
+	width: 810px;
 }
 .country {
-	float:left;
+	float: left;
 }
