@@ -10,9 +10,16 @@
 .navigation ul li {
 	float: left;
 	line-height: 51px;
+	position:relative;
 }
 .navigation ul li:hover {
-	float: left;
+	margin-top: -15px;
+	line-height: 72px;
+	padding-top: 4px;
+	background-color: #5a93e9;
+	display: block;
+}
+.navigation ul .active {
 	margin-top: -15px;
 	line-height: 72px;
 	padding-top: 4px;
@@ -38,3 +45,39 @@
 	margin-left: 2px;
 	background-color: black;
 }
+
+.navigation ul li ul{
+	position: absolute;
+	padding: 2px 0px 10px 0px;
+	background: #594e4e;
+	z-index: 10;
+	height:auto;
+	float: left;
+	display: none;
+	margin-top:-5px;
+	
+}
+
+.navigation ul li ul li a{
+	line-height: 28px;
+	min-width: 166px;
+	background: #5a93e9;
+	padding: 0px 10px;
+	margin: 2px 0px;
+	display:block;
+	text-decoration:none;
+	color:white;
+}
+.navigation ul li:hover ul{
+	display:block;
+}
+
+.navigation ul li:hover ul li{
+	background:#594e4e;
+	margin:0px;
+	padding:0px;
+	line-height: 28px;
+}
+
+
+

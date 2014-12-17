@@ -1,34 +1,38 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* body contents*/
+/*----------------------------------------- body contents-------------------------------------------*/
 .left-content h1 {
 	font-size: 16px;
-	letter-spacing: 2px;
+	line-height: 19px;
+	letter-spacing: 1.3px;
 	font-family: Arial;
 	font-weight: normal;
 }
 .left-content p {
-	font-size: 13px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-family: Verdana, Geneva, sans-serif;
 	text-align: justify;
 	margin-bottom: 21px;
-	margin-top: 14px;
+	margin-top: 12px;
+	line-height:15px;
 }
 /* for tabs */
 .tabs ul {
 	list-style-type:none;
 	float:left;
-	height:50px;
-	margin-top:85px;
+	min-height:50px;
+	margin-top:87px;
 }
 .tabs ul li {
-	background:no-repeat top left;
+	background:no-repeat 0px 0px;
 	/*padding-left:14px;*/
-	float:left;
-	width:193px;
-	margin-left:2px;
-	text-align:center;
+	float: left;
+	width: 193px;
+	margin-left: 0px;
+	font-size: 11px;
+	text-align: center;
+	margin-left: 1px;
 }
 .tabs ul li a {
 	background: #3d8896 100% 0px no-repeat;
@@ -46,10 +50,10 @@
 	margin-top:6px;
 }*/
 
-.tabs ul li:hover {
-	margin-top:7px;
+.tabs ul .active2 {
+	margin:7px 1px 0px 1px;
 }
-/*main products*/
+/*------------main products---------*/
 
 .main-products ul {
 	list-style-type: none;
@@ -57,11 +61,11 @@
 .main-products ul li {
 	float: left;
 	margin-right: 56px;
-	/*padding: 0px 0px 32px 0px;*/
+	padding: 0px 0px 32px 0px;
 	/*margin-bottom:32px;*/
-	width: 280px;/*height: 295px;*/
-	height: 306px;
-	padding: 0px 0px 30px 0px;
+	width: 280px;
+	height: 295px;/*height: 306px;
+	padding: 0px 0px 30px 0px;*/
 }
 .main-products ul li img {
 	height: 170px;
@@ -79,24 +83,68 @@
 .main-products ul li p {
 	font-size: 13px;
 	line-height: 15px;
-	height: 80px;
+	height: 75px;
 }
-/*footer */
+
+/*------------------------right content---------------------------------*/
+.right-content a {
+	display: block;
+	padding: 29px 131px 68px 75px;
+}
+.right-content .blank {
+	padding:0px;
+}
+.right-content .buyButton {
+	margin-left:31px;
+	display: block;
+	font-weight: normal;
+	font-size: 30px;
+	padding-top: 31px;
+	color: #636363;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+}
+.right-content .buyButton a {
+	margin: 14px 0px 0px 18px;
+	padding:0px;
+}
+
+/*-----------------------------------------------------lightbox---------------------------------------------------*/
+.lightbox {
+	width: 1009px;
+	height: 466px;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 42px 28px 25px 27px;/*-1*/
+	border:1px solid #e8e8e8;
+	top: 13px;
+	left: 1px;
+}
+.lbCloseButton {
+	background: url(../images/closeButton.png);
+	width: 23px;
+	height: 26px;
+	top: 9px;
+	right: 19px;
+}
+
+/*------------------------------------------------------footer ------------------------------------------------*/
 .footer-glasstype .main-text {
-	word-spacing: 6px;
+	font-size:15px;
+	line-height:21px;
+	font-family:Verdana, Geneva, sans-serif
 }
-.footer-glasstype .main-text span {
+/*.footer-glasstype .main-text span {
 	letter-spacing: 3px;
-}
+}*/
 /*.footer-glasstype hr {
 	margin-top: 20px;
 	margin-bottom: 17px;
 	background-image:url(../images/hr.png);
 }*/
 .footer-glasstype img {
-	margin-top: 20px;
+	margin-top: 18px;
 	margin-bottom: 18px;
-	background: url(../images/hr.png) repeat-x top right;
+	background: url(../images/hr.png) repeat-x 0px 0px;
 	width:980px;
 	height: 2px;
 }
@@ -123,6 +171,7 @@
 	float: right;
 	width: 180px;
 	line-height: 15px;
+	letter-spacing: 0.8px;
 }
 .footer-glasstype ul li p span {
 	font-size: 10px;
@@ -130,7 +179,7 @@
 .footer-nav img {
 	float: left;
 	border: 0px;
-	padding: 5px 10px 5px 0px;
+	padding: 5px 11px 5px 0px;
 }
 .footer-nav ul {
 	float: left;
@@ -142,7 +191,7 @@
 	padding: 0px 10px;
 	float: left;
 	list-style-type: none;
-	background: url(../images/footer-nav-line.png) no-repeat top left;
+	background: url(../images/footer-nav-line.png) no-repeat 0px 0px;
 }
 .footer-nav ul li a {
 	text-decoration: none;
@@ -177,49 +226,54 @@
 .footer-main-nav ul li {
 	float: left;
 	line-height: 17px;
+	padding: 0px 12px;
+	margin-left: 1px;
 	list-style-type: none;
-	padding: 0px 10px;
-	background: url(../images/footer-main.png) no-repeat  top right;
+	background: url(../images/footer-main.png) no-repeat 0px 0px;
+}
+.footer-main-nav ul li:first-child {
+	background:none;
 }
 .footer-main-nav ul li a {
-	text-decoration:none;
-	color:#4c4c4c;
-	display:block;
+	text-decoration: none;
+	color: #4c4c4c;
+	display: block;
 }
 .footer-main span {
-	float:right;
+	float: right;
+	padding-right: 11px;
+letter-spacing: 0.5px;
 }
-/*------------------------right content---------------------------------*/
-.right-content a {
+
+
+/*------------------------------- drop down for language -------------------------------------*/
+.language img {
+	height:14px;
+	float: left;
+}
+.language span {
+	margin-left:10px;
 	display: block;
-	padding: 25px 131px 68px 75px;
+	float: right;
+	line-height: 15px;
+	font-size: 8px;
 }
-.right-content .blank{
-	padding:0px;}
-.right-content .buyButton {
-	margin-left:44px;
-	display: block;
-	font-weight: normal;
-	font-size: 28px;
-	color: #636363;
+.language span img {
+	margin-left:10px;
+	float: right;
 }
-.right-content .buyButton a {
-	margin: 15px 0px 0px 18px;
-	padding:0px;
+.language form {
+	display: none;
 }
-.lightbox {
-	width: 1009px;
-	height: 466px;
-	background-color: rgba(0, 0, 0, 0.1);
-	padding: 42px 28px 25px 27px;/*-1*/
-	border:1px solid #e8e8e8;
-	top: 13px;
-	left: 1px;
+.language ul {
+	padding-top:20px;
+	float: none;
+	display: none;
+	width:100px;
 }
-.lbCloseButton {
-	background: url(../images/closeButton.png);
-	width: 23px;
-	height: 26px;
-	top: 9px;
-	right: 19px;
+.language ul li {
+	float:left;
+	margin-top: 2px;
+	height: 15px;
+	list-style-type: none;
 }
